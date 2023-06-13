@@ -1,5 +1,5 @@
 <?php 
- include('config/constants.php');
+ include('./config/constants.php');
  
  //Check task_id in URL
  if(isset($_GET['task_id']))

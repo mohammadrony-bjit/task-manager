@@ -1,5 +1,5 @@
 <?php 
- include('config/constants.php');
+ include('./config/constants.php');
  //Get the listid from URL
  
  $list_id_url = $_GET['list_id'];

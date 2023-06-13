@@ -1,5 +1,5 @@
 <?php 
- include('config/constants.php');
+ include('./config/constants.php');
  
  //Check the Task ID in URL
  
@@ -216,7 +216,7 @@
  $_SESSION['update_fail'] = "Failed to Update Task";
  
  //Redirect to this Page
- header('location:'.SITEURL.'update-task.php?task_id='.$task_id);
+ header('location:'.SITEURL.'./update-task.php?task_id='.$task_id);
  }
  
  
