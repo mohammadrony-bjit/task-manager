@@ -4,7 +4,7 @@
 <html>
  <head>
  <title>Task Manager with PHP and MySQL</title>
- <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
+ <link rel="stylesheet" href="./css/style.css" />
  </head>
  
  <body>
@@ -43,7 +43,7 @@
  $list_name = $row2['list_name'];
  ?>
  
- <a href="<?php echo SITEURL; ?>list-task.php?list_id=<?php echo $list_id; ?>"><?php echo $list_name; ?></a>
+ <a href="./list-task.php?list_id=<?php echo $list_id; ?>"><?php echo $list_name; ?></a>
  
  <?php
  
@@ -54,7 +54,7 @@
  
  
  
- <a href="<?php echo SITEURL; ?>manage-list.php">Manage Lists</a>
+ <a href="./manage-list.php">Manage Lists</a>
  </div>
  <!
  
@@ -147,9 +147,9 @@
  <td><?php echo $priority; ?></td>
  <td><?php echo $deadline; ?></td>
  <td>
- <a href="<?php echo SITEURL; ?>update-task.php?task_id=<?php echo $task_id; ?>">Update </a>
+ <a href="./update-task.php?task_id=<?php echo $task_id; ?>">Update </a>
  
- <a href="<?php echo SITEURL; ?>delete-task.php?task_id=<?php echo $task_id; ?>">Delete</a>
+ <a href="./delete-task.php?task_id=<?php echo $task_id; ?>">Delete</a>
  
  </td>
  </tr>

@@ -4,7 +4,7 @@
 <html>
  <head>
  <title>Task Manager with PHP and MySQL</title>
- <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
+ <link rel="stylesheet" href="./css/style.css" />
  </head>
  
  <body>
@@ -14,7 +14,7 @@
  <h1>TASK MANAGER</h1>
  
  <a class="btn-secondary" href="<?php echo SITEURL; ?>">Home</a>
- <a class="btn-secondary" href="<?php echo SITEURL; ?>manage-list.php">Manage Lists</a>
+ <a class="btn-secondary" href="./manage-list.php">Manage Lists</a>
  
  
  <h3>Add List Page</h3>

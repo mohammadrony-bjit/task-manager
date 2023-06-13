@@ -4,7 +4,7 @@ include('config/constants.php');
 <html>
  <head>
  <title>Task Manager with PHP and MySQL</title>
- <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
+ <link rel="stylesheet" href="./css/style.css" />
  </head>
  
  <body>
@@ -58,7 +58,7 @@ include('config/constants.php');
  <!
  <div class="all-lists">
  
- <a class="btn-primary" href="<?php echo SITEURL; ?>add-list.php">Add List</a>
+ <a class="btn-primary" href="./add-list.php">Add List</a>
  
  <table class="tbl-half">
  <tr>
@@ -110,8 +110,8 @@ include('config/constants.php');
  <td><?php echo $sn++; ?>. </td>
  <td><?php echo $list_name; ?></td>
  <td>
- <a href="<?php echo SITEURL; ?>update-list.php?list_id=<?php echo $list_id; ?>">Update</a> 
- <a href="<?php echo SITEURL; ?>delete-list.php?list_id=<?php echo $list_id; ?>">Delete</a>
+ <a href="./update-list.php?list_id=<?php echo $list_id; ?>">Update</a> 
+ <a href="./delete-list.php?list_id=<?php echo $list_id; ?>">Delete</a>
  </td>
  </tr>
  
