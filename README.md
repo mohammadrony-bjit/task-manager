@@ -1,13 +1,6 @@
 # Task Manager with PHP and MySQL
 Simple Task Manager web app with PHP and MySQL.
 [Complete TASK MANAGER Tutorial Playlist](https://www.youtube.com/watch?v=1rl36zxqZZw&list=PLBLPjjQlnVXXygeLVmd9mGNtgrHaBOFos)
-## Support Developer
-1. Subscribe & Share my YouTube Channel - https://bit.ly/vijay-thapa-online-courses
-2. Add a Star 🌟 to this 👆 Repository
-## Donate
-**[PayPal](https://bit.ly/support-vijay-thapa)**
-**[Buy me a Coffee ☕️](https://www.buymeacoffee.com/vijaythapa)**
-**Donate by wire transfer:** E-Mail at *donate@vijaythapa.com* for wire transfer details. 
 ## Technologies Used
 1. Core PHP Programming Language (Procedural Programming)
 2. MySQL Database
@@ -32,23 +25,14 @@ b. Create a Database
 c. Import the SQL file provided with this project
 5. Make Changes to settings
 Go to 'config' folder and Open 'constants.php' file. Then make changes on following constants
-```php
+```
 <?php 
 //Start Session
 session_start();
 //Create Constants to save Database Credentials
-define('DB_SERVER', '192.168.199.10');
-define('DB_USERNAME', 'root'); //Your Database username instead of 'root'
-define('DB_PASSWORD', '12345678'); //Your Database Password instead of null/empty
-define('DB_NAME', 'task_manager'); //Your Database Name if it's not 'task_manager'
-define('SITEURL', 'http://192.168.199.7/'); //Update the home URL of the project if you have changed port number or it's live on server
-?>
+define('DB_SERVER', '<db-host>');
+define('DB_USERNAME', 'rony');
+define('DB_PASSWORD', '12345678');
+define('DB_NAME', 'task_manager');
+define('SITEURL', '<web-host>');
 ```
-6. Now, Open the project in your browser. It should run perfectly.
-## For Sponsor or Projects Enquiry
-1. Email - hi@vijaythapa.com
-## Follow Me on
-1. LinkedIn - [vijaythapa](https://www.linkedin.com/in/vijaythapa/ "Vijay Thapa on LinkedIn")
-2. Instagram - [@vijaythapa.code](https://www.instagram/vijaythapa.code/ "Vijay Thapa on Instagram")
-3. Facebook - [@thevijaythapa](https://www.facebook.com/thevijaythapa/ "Vijay Thapa on Facebook")
-5. Twitter - [@thevijaythapa](https://www.twitter.com/thevijaythapa "Vijay Thapa on Twitter")
