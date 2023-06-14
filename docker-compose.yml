@@ -1,0 +1,30 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    container_name: db-task
+    networks:
+      - net1
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345678
+      - MYSQL_DATABASE=task_manager
+    volumes:
+      - ./mysqldb:/var/lib/mysql
+      - ./app/database/task_manager.sql:/docker-entrypoint-initdb.d/task_manager.sql
+
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app-task
+    ports:
+      - 80:80
+    networks:
+      - net1
+    volumes:
+      - ./app/task-manager/:/var/www/html/
+    depends_on:
+      - mysql
+      
+networks:
+  net1:
