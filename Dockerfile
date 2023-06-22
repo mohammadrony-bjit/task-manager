@@ -7,4 +7,4 @@ RUN apt-get install -y git
 WORKDIR /var/www/html
 
 # Copy the source code from GitHub to the container
-RUN git clone -b kubernetes https://github.com/mohammadrony-bjit/task-manager.git .
+COPY . .
