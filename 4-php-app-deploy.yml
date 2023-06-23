@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: task-app-apache
-          image: mohammadrony/apache-php-mysqli:latest
+          image: mohammadrony/apache-php-mysqli:2
           imagePullPolicy: "Always"
           ports:
             - containerPort: 800
