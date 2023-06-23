@@ -12,12 +12,13 @@ spec:
       labels:
         app: task-app-apache
     spec:
+    terminationGracePeriodSeconds: 100
       containers:
         - name: task-app-apache
-          image: mohammadrony/apache-php-mysqli:2
+          image: mohammadrony/apache-php-mysqli:latest
           imagePullPolicy: "Always"
           ports:
-            - containerPort: 800
+            - containerPort: 80
           volumeMounts:
             - name: task-app-storage
               mountPath: /var/www/html
