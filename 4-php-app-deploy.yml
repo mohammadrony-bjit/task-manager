@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: task-app-apache
+  template:
+    metadata:
+      labels:
+        app: task-app-apache
+    spec:
+      containers:
+        - name: task-app-apache
+          image: mohammadrony/apache-php-mysqli:latest
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: task-app-storage
+              mountPath: /var/www/html
+      volumes:
+        - name: task-app-storage
+          persistentVolumeClaim:
+            claimName: task-app-pvc
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: task-app-service
+spec:
+  selector:
+    app: task-app-apache
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30000
+  type: NodePort
+  
