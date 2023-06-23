@@ -15,8 +15,9 @@ spec:
       containers:
         - name: task-app-apache
           image: mohammadrony/apache-php-mysqli:latest
+          imagePullPolicy: "Always"
           ports:
-            - containerPort: 80
+            - containerPort: 800
           volumeMounts:
             - name: task-app-storage
               mountPath: /var/www/html
