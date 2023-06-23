@@ -19,13 +19,6 @@ spec:
           imagePullPolicy: "Always"
           ports:
             - containerPort: 80
-          volumeMounts:
-            - name: task-app-storage
-              mountPath: /var/www/html
-      volumes:
-        - name: task-app-storage
-          persistentVolumeClaim:
-            claimName: task-app-pvc
             
 ---
 apiVersion: v1
